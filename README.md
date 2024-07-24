@@ -9,6 +9,3 @@ This is my portfolio website to introduce myself, here I put my skills, projects
 - Typescript
 - Styled Components
  
-## To run this project:
-- yarn install
-- yarn run start
