@@ -16,6 +16,24 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
+                <a href="https://med-gaurd.vercel.app/" target="_blank" rel="noreferrer">
+                  <img src={externalLink} alt="Visit site" />
+                </a>
+              </div>
+            </header>
+            <div className="body">
+              <h3>Medguard - Secure Decentralized EHR Audit System</h3>
+              <p>A secure web-based audit logging system for electronic health records (EHRs) using React and Flask. The system allows patients and auditors to view access logs while preserving privacy and ensuring tamper detection. Access is authenticated via role-based login, and all audit entries include time, user ID, and action type. To ensure immutability and decentralization, I integrated Ethereum-based blockchain logging, so any unauthorized changes to audit data can be detected. The system supports secure queries, encrypted storage, and a clear UI that allows users to track who accessed their health data and when—enabling transparency and accountability.</p>
+            </div>
+            <footer> <ul className="tech-list"> <li>React</li><li>Flask</li><li>MongoDB</li><li>Ethereum</li><li>Blockchain</li></ul> </footer>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <div className="project-links">
                 
               </div>
             </header>
