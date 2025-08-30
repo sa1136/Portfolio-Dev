@@ -16,6 +16,25 @@ export function Experience() {
             <div className="experience">
             
               <div className="body">
+                <h3>Software Developer </h3>
+                <h3>HubSpot</h3>
+                <h3>June 2025 – Aug 2025</h3>
+                <br></br>
+                <p>Engineered advanced Action Builder features—including interactive tooltips, case-sensitive validation, page-level dropdowns, drag-and-drop outputs, custom code execution, and enum input panels—using TypeScript and React, increasing workflow efficiency by 25%.</p>
+                <p>Integrated dynamic listing category types into frontend UI and underlying data models, ensuring state consistency and enabling scalable workflow automation across applications.</p>
+                <p>Developed and enabled Chirp API endpoints to seamlessly connect backend services with frontend workflows, supporting real-time billing metric integration and dynamic execution pipelines.</p>
+                <p>Enhanced gates, release scopes, and RTL functionality for the External Action Builder, reducing QA defects by 30% and accelerating release timelines.</p>
+                <p>Stabilized internal Action Builder and QA environments by resolving visual rendering bugs, acceptance test crashes, and event-handling issues, improving system reliability and developer confidence.</p>
+                <p>Implemented end-to-end event tracking and telemetry across workflow components, significantly improving observability, debugging efficiency, and product maintainability.</p>
+              </div>
+              
+            </div>
+          </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+            <div className="experience">
+            
+              <div className="body">
                 <h3>Software Developer Intern</h3>
                 <h3>WorkUp</h3>
                 <h3>May 2024 – Jul 2024</h3>
@@ -27,7 +46,6 @@ export function Experience() {
               
             </div>
           </ScrollAnimation>
-
 
           <ScrollAnimation animateIn="flipInX">
             <div className="experience">
