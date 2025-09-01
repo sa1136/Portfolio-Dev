@@ -32,26 +32,27 @@ export function About() {
         {/* About Me Section */}
         <div className="about-right">
           <ScrollAnimation animateIn="fadeInUp">
-            <h2>About me</h2>
+            <h2>About Me</h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
             <p>
-              Hi there! I'm Akhilaa, a Computer Science Master's student at USC, adept in software development, machine learning, and cloud computing. Proficient in C, C++, Python, JavaScript, and Swift, I leverage frameworks such as React.js, Node.js, Flask, and Bootstrap to craft robust applications.
+              Hi, I'm Akhilaa — a Master's student in Computer Science at USC and a Software Developer with experience in full-stack development, cloud platforms, and data-driven applications.
             </p>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
             <p>
-            As a certified AWS Cloud Practitioner, my expertise includes optimizing deployment processes with CI/CD pipelines, enhancing AWS and Google Cloud Platform efficiency, and developing predictive models like LSTM for stock price forecasting and ANN for crop yield prediction.
+              Skilled in React, Node.js, AWS, and GCP, I’ve built scalable applications including a real-time stock search platform and MedGuard, a medical monitoring system. I enjoy creating impactful solutions with clean, efficient code.
             </p>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}>
             <p>
-              I am actively seeking entry-level Software Engineer roles where I can apply my skills and contribute to innovative projects.
-
-
+              I'm passionate about developing software that solves real-world problems and excited to grow as a Software Engineer while contributing to innovative teams.
             </p>
           </ScrollAnimation>
         </div>
+
+
+
 
         {/* Education Section */}
         <div className="about-left">
@@ -61,7 +62,7 @@ export function About() {
               <h4>University of Southern California</h4>
               <h4>Aug 2023 – May 2025</h4>
               <h4>Masters of Science in Computer Science</h4>
-              <h4> GPA: 3.5 / 4</h4>
+              <h4> GPA: 3.65 / 4</h4>
               
             </div>
             <br></br>
