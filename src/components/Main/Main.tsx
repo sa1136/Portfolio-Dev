@@ -56,7 +56,7 @@ export function Main() {
                 "distance": 400,
                 "duration": 2,
                 "opacity": 0.8,
-                "size": 2,
+                "size": 2
               },
               "connect": {
                 "distance": 80,
@@ -118,7 +118,7 @@ export function Main() {
                 "area": 800
               },
               "limit": 20,
-              "value": 15,
+              "value": 15
             },
             "opacity": {
               "animation": {
