@@ -17,7 +17,7 @@ export function Experience() {
               <h3>Software Developer</h3>
               <h4>HubSpot</h4>
               <p><strong>June 2025 – Aug 2025</strong></p>
-              <p>Engineered advanced Action Builder features—including interactive tooltips, case-sensitive validation, page-level dropdowns, drag-and-drop outputs, custom code execution, and enum input panels—using TypeScript and React, increasing workflow efficiency by 25%.</p>
+              <p>Engineered advanced Action Builder features including interactive tooltips, case-sensitive validation, page-level dropdowns, drag-and-drop outputs, custom code execution, and enum input panels—using TypeScript and React, increasing workflow efficiency by 25%.</p>
               <p>Integrated dynamic listing category types into frontend UI and underlying data models, ensuring state consistency and enabling scalable workflow automation across applications.</p>
               <p>Developed and enabled Chirp API endpoints to seamlessly connect backend services with frontend workflows, supporting real-time billing metric integration and dynamic execution pipelines.</p>
               <p>Enhanced gates, release scopes, and RTL functionality for the External Action Builder, reducing QA defects by 30% and accelerating release timelines.</p>

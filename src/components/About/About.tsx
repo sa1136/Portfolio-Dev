@@ -47,7 +47,7 @@ export function About() {
             <img src={akhilaa} alt="Akhilaa Sonduri Panthangi" />
           </div>
           <p>
-            Hi, I'm Akhilaa Sonduri Panthangi — a Master's student in Computer Science at USC and a Software Developer passionate about building scalable, data-driven, and impactful applications.
+            Hi, I'm Akhilaa Sonduri Panthangi , a Master's student in Computer Science at USC and a Software Developer passionate about building scalable, data-driven, and impactful applications.
           </p>
           <p>
             I specialize in full-stack development using React, Node.js, AWS, and GCP, and love turning complex ideas into clean, efficient, and user-friendly software. From developing a real-time stock search platform to creating MedGuard, a medical monitoring system, I've designed and deployed solutions that bridge functionality with real-world impact.
