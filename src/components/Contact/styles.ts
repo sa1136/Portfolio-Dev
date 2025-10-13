@@ -33,7 +33,7 @@ export const Container = styled.section`
       background-color: var(--green);
       border-radius: 1.4rem;
       padding: 1.6rem 2.8rem;
-      transition: background-color 0.25s;
+      transition: filter 0.25s;
       img{
         width: 4rem;
       }
@@ -42,10 +42,7 @@ export const Container = styled.section`
         font-weight: 500;
       }
       &:hover{
-        background-color: var(--pink);
-        a{
-          color: #FFF;
-        }
+        filter: brightness(0.6);
       }
     }
   }

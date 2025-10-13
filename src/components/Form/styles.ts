@@ -110,7 +110,7 @@ export const ContainerSuccess = styled.div`
     transition: background-color 0.3s;
 
     &:hover {
-       background-color: var(--pink);
+       background-color: var(--accent-1);
     }
   }
 `;
