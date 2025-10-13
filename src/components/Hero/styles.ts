@@ -78,8 +78,8 @@ export const Container = styled.section`
       
       &:hover {
         transform: translateY(-4px);
-        background: var(--accent-1);
-        border-color: var(--accent-1);
+        background: var(--surface);
+        border: 3px solid #0077b5; /* LinkedIn blue ring */
         
         img {
           filter: brightness(1.2);
@@ -87,8 +87,8 @@ export const Container = styled.section`
       }
       
       &:nth-child(2):hover {
-        background: var(--green);
-        border-color: var(--green);
+        background: var(--surface);
+        border: 3px solid var(--green); /* GitHub green ring */
       }
     }
   }
