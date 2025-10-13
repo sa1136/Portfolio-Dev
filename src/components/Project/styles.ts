@@ -15,7 +15,6 @@ export const Container = styled.section`
     grid-template-rows: auto;
     gap: 2rem;
     padding: 1rem;
-    overflow: hidden;
 
     .project{
       padding: 2rem 1.8rem;
@@ -93,12 +92,20 @@ export const Container = styled.section`
   @media (max-width: 960px){
     .projects{
       grid-template-columns: 1fr 1fr;
+      padding: 0.5rem;
+      gap: 1.5rem;
     }
   }
 
   @media (max-width: 740px){
     .projects{
       grid-template-columns: 1fr;
+      padding: 0.5rem;
+      gap: 1.5rem;
+    }
+    
+    .project {
+      padding: 1.5rem 1.2rem;
     }
   }
 `
