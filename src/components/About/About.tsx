@@ -43,6 +43,9 @@ export function About() {
       
       <div className="about-intro">
         <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
+          <div className="about-image">
+            <img src={akhilaa} alt="Akhilaa Sonduri Panthangi" />
+          </div>
           <p>
             Hi, I'm Akhilaa Sonduri Panthangi — a Master's student in Computer Science at USC and a Software Developer passionate about building scalable, data-driven, and impactful applications.
           </p>
