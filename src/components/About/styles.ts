@@ -400,6 +400,7 @@ export const Container = styled.section`
 
   .about-image{
     text-align: center;
+    margin-bottom: 3rem;
    img{
      margin-top: 2rem;
      width: 50%;
@@ -433,7 +434,7 @@ export const Container = styled.section`
       }
     }
     
-    .about-timeline {
+    .about-timeline, .education-timeline {
       &::before {
         left: 2rem;
       }
@@ -449,6 +450,42 @@ export const Container = styled.section`
       &::before {
         left: -8px !important;
         right: auto !important;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-intro {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    
+    .about-timeline, .education-timeline {
+      padding: 0 1rem;
+      
+      &::before {
+        left: 1.5rem;
+      }
+    }
+    
+    .timeline-item {
+      padding-left: 3rem !important;
+      
+      &::before {
+        left: -6px !important;
+      }
+    }
+    
+    .timeline-card {
+      padding: 1.5rem 1rem;
+      
+      h3 {
+        font-size: 1.8rem;
+      }
+      
+      p {
+        font-size: 1.4rem;
       }
     }
     

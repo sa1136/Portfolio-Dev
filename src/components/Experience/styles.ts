@@ -102,34 +102,71 @@ export const Container = styled.section`
     margin-bottom: 3rem;
   }
 
-  .timeline-container {
+  .experience-timeline {
     position: relative;
-    padding-left: 3rem; /* Adjust for space between the timeline and content */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 3rem;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, var(--accent-1), var(--accent-2), var(--accent-3));
+      border-radius: 2px;
+    }
   }
-
-  .timeline {
-    position: absolute;
-    left: 1.5rem;
-    top: 0;
-    bottom: 0;
-    width: 0.2rem;
-    background: var(--green);
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+    width: 100%;
+    padding-left: 8rem;
+    text-align: left;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: var(--accent-1);
+      border: 4px solid var(--surface);
+      border-radius: 50%;
+      top: 0;
+      left: 1.8rem;
+      z-index: 2;
+    }
+    
+    &:nth-child(2)::before {
+      background: var(--accent-2);
+    }
+    
+    &:nth-child(3)::before {
+      background: var(--accent-3);
+    }
+    
+    &:nth-child(4)::before {
+      background: var(--green);
+    }
+    
+    &:nth-child(5)::before {
+      background: var(--blue);
+    }
   }
-
-  .experience {
+  
+  .timeline-card {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 1.2rem;
-    padding: 2rem 1.8rem;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    overflow: hidden;
     backdrop-filter: blur(15px);
-    position: relative;
-    margin-bottom: 2rem;
-    color: var(--text);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     
     &:nth-child(1) {
       background: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(108, 92, 231, 0.15));
@@ -141,16 +178,33 @@ export const Container = styled.section`
       border-color: rgba(0, 194, 168, 0.4);
     }
     
-    &:nth-child(3) {
-      background: linear-gradient(135deg, rgba(255, 175, 95, 0.3), rgba(255, 175, 95, 0.15));
-      border-color: rgba(255, 175, 95, 0.4);
-    }
-    
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
       backdrop-filter: blur(20px);
     }
+    
+    h3 {
+      color: var(--green);
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    h4 {
+      color: var(--text);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    
+    p {
+      color: var(--text);
+      font-size: 1.6rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
 
     &:before {
       content: "";
@@ -220,7 +274,7 @@ export const Container = styled.section`
   
       /* Light mode: glass-morphism matching technical skills */
       html.light & {
-        .experience{
+        .timeline-card {
           background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.08));
           border: 1px solid rgba(0, 0, 0, 0.2);
           
@@ -234,17 +288,21 @@ export const Container = styled.section`
             border-color: rgba(0, 194, 168, 0.5);
           }
           
-          &:nth-child(3) {
-            background: linear-gradient(135deg, rgba(255, 175, 95, 0.35), rgba(255, 175, 95, 0.18));
-            border-color: rgba(255, 175, 95, 0.5);
-          }
-          
           &:hover {
             box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
           }
-        }
-        .experience .body p a{
-          color: var(--text);
+          
+          h3 {
+            color: var(--green);
+          }
+          
+          h4 {
+            color: var(--text);
+          }
+          
+          p {
+            color: var(--text);
+          }
         }
       }
   
@@ -272,4 +330,53 @@ export const Container = styled.section`
       padding-left: 2rem;
     }
   }
+  
+  @media (max-width: 960px) {
+    .experience-timeline {
+      &::before {
+        left: 2.5rem;
+      }
+    }
+    
+    .timeline-item {
+      padding-left: 6.5rem;
+      
+      &::before {
+        left: 1.8rem;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .experience-timeline {
+      &::before {
+        left: 2rem;
+      }
+    }
+    
+    .timeline-item {
+      padding-left: 5rem;
+      
+      &::before {
+        left: 1.5rem;
+      }
+    }
+    
+    .timeline-card {
+      padding: 1.5rem 1rem;
+      
+      h3 {
+        font-size: 1.8rem;
+      }
+      
+      h4 {
+        font-size: 1.6rem;
+      }
+      
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
 `;
+

@@ -147,4 +147,50 @@ export const Container = styled.section`
       padding: 1.5rem 1.2rem;
     }
   }
+  
+  @media (max-width: 480px) {
+    .projects{
+      grid-template-columns: 1fr;
+      padding: 0.5rem 1rem;
+      gap: 1.2rem;
+    }
+    
+    .project {
+      padding: 1.2rem 1rem;
+      
+      header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        
+        .project-links {
+          gap: 0.5rem;
+        }
+        
+        a > img {
+          width: 3.5rem;
+        }
+      }
+      
+      h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+      }
+      
+      footer {
+        .tech-list {
+          gap: 1rem;
+          font-size: 1.2rem;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
 `
