@@ -16,20 +16,39 @@ export const Container = styled.section`
     gap: 2rem;
     padding: 1rem;
 
-    .project{
-      padding: 2rem 1.8rem;
-      background-color: var(--accent-1);
-      border-radius: 1.2rem;
-      transition: 0.25s;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      color: var(--text);
-      &:hover{
-        transform: translateY(-5px);
-        filter: brightness(0.95);
-        background-color: #3b2fb3; /* even darker purple */
-      }
+        .project{
+          background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          border-radius: 1.2rem;
+          padding: 2rem 1.8rem;
+          transition: all 0.3s ease;
+          overflow: hidden;
+          backdrop-filter: blur(15px);
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          color: var(--text);
+          
+          &:nth-child(1) {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(108, 92, 231, 0.15));
+            border-color: rgba(108, 92, 231, 0.4);
+          }
+          
+          &:nth-child(2) {
+            background: linear-gradient(135deg, rgba(0, 194, 168, 0.3), rgba(0, 194, 168, 0.15));
+            border-color: rgba(0, 194, 168, 0.4);
+          }
+          
+          &:nth-child(3) {
+            background: linear-gradient(135deg, rgba(255, 175, 95, 0.3), rgba(255, 175, 95, 0.15));
+            border-color: rgba(255, 175, 95, 0.4);
+          }
+          
+          &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(20px);
+          }
 
       header{
         display: flex;
@@ -78,15 +97,35 @@ export const Container = styled.section`
     }
   }
   
-  /* Light mode: force white text inside colored cards for contrast */
-  html.light & {
-    .projects .project{
-      color: #FFFFFF;
-    }
-    .projects .project p a{
-      color: #FFFFFF;
-    }
-  }
+      /* Light mode: glass-morphism matching technical skills */
+      html.light & {
+        .projects .project{
+          background: linear-gradient(135deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.08));
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          
+          &:nth-child(1) {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.35), rgba(108, 92, 231, 0.18));
+            border-color: rgba(108, 92, 231, 0.5);
+          }
+          
+          &:nth-child(2) {
+            background: linear-gradient(135deg, rgba(0, 194, 168, 0.35), rgba(0, 194, 168, 0.18));
+            border-color: rgba(0, 194, 168, 0.5);
+          }
+          
+          &:nth-child(3) {
+            background: linear-gradient(135deg, rgba(255, 175, 95, 0.35), rgba(255, 175, 95, 0.18));
+            border-color: rgba(255, 175, 95, 0.5);
+          }
+          
+          &:hover {
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+          }
+        }
+        .projects .project p a{
+          color: var(--text);
+        }
+      }
   
 
   @media (max-width: 960px){

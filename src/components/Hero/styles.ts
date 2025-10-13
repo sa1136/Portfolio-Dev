@@ -63,16 +63,16 @@ export const Container = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 5.5rem;
-      height: 5.5rem;
+      width: 6.2rem;
+      height: 6.2rem;
       border-radius: 50%;
       background: var(--surface);
       border: 1px solid var(--border);
       transition: all 0.3s ease;
       
       img {
-        width: 2.6rem;
-        height: 2.6rem;
+        width: 3.2rem;
+        height: 3.2rem;
         transition: all 0.3s ease;
       }
       

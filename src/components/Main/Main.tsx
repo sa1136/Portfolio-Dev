@@ -25,7 +25,7 @@ export function Main() {
         options={{
           "fullScreen": {
             "enable": true,
-            "zIndex": 1
+            "zIndex": -1
           },
           "detectRetina": true,
           "fpsLimit": 60,
@@ -159,8 +159,6 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                
-               
                 {
                   "src": htmlIcon,
                   "width": 20,
@@ -171,7 +169,6 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                
                 {
                   "src": nodeIcon,
                   "width": 20,
@@ -182,15 +179,11 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                
                 {
                   "src": typescriptIcon,
                   "width": 20,
                   "height": 20
-                },
-                
-                
-
+                }
               ],
               "polygon": {
                 "sides": 5
