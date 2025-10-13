@@ -11,15 +11,26 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 2.2rem;
   }
   .hability{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, filter 0.2s ease;
 
     img{
-      width: 3.4rem;
+      width: 3.6rem;
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
+    &:hover img{
+      transform: scale(1.15);
+      filter: drop-shadow(0 6px 16px rgba(108,92,231,0.35)); /* accent-1 glow */
+    }
+    &:hover{
+      transform: translateY(-2px);
+      filter: brightness(1.05);
     }
   }
 
@@ -43,6 +54,54 @@ export const Container = styled.section`
     font-weight: 500;
   }
   
+  /* Add spacing between About Me paragraphs */
+  .about-right p{
+    margin-bottom: 1.2rem;
+  }
+  /* Education visuals */
+  .about-left .education-card{
+    background-color: var(--education-card-bg);
+    border: 1px solid var(--border);
+    border-left: 0.4rem solid var(--green);
+    border-radius: 1.2rem;
+    margin-top: 1.2rem; /* space below heading */
+    margin-bottom: 0.8rem; /* space between cards */
+    padding: 1.6rem 2rem;
+    transition: transform 0.25s ease, filter 0.25s ease;
+  }
+  /* Alternate card corner shapes */
+  .about-left .education-card:nth-child(odd){
+    border-top-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
+  }
+  .about-left .education-card:nth-child(even){
+    border-top-right-radius: 2.4rem;
+    border-bottom-left-radius: 2.4rem;
+  }
+  .about-left .education-card:hover{
+    transform: translateY(-3px);
+    filter: brightness(0.98);
+  }
+  /* About badges */
+  .about-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.6rem;
+  }
+  .badge{
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    background-color: var(--accent-3);
+    color: #1e1f25;
+    border: none;
+    font-size: 1.3rem;
+  }
+  
+  
+
   
 
   .about-image{

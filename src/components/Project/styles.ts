@@ -19,16 +19,17 @@ export const Container = styled.section`
 
     .project{
       padding: 2rem 1.8rem;
-      background-color: #2b2b2b;
+      background-color: var(--accent-1);
       border-radius: 1.2rem;
       transition: 0.25s;
       display: flex;
       flex-direction: column;
       height: 100%;
-      color: #FFF;
+      color: var(--text);
       &:hover{
         transform: translateY(-5px);
-        background-color: var(--pink);
+        filter: brightness(0.95);
+        background-color: #3b2fb3; /* even darker purple */
       }
 
       header{
@@ -55,7 +56,7 @@ export const Container = styled.section`
         letter-spacing: 0.12rem;
         margin-bottom: 2rem;
         a{
-          color: #FFFF;
+          color: var(--text);
           border-bottom: 1px solid var(--green);
           transition: color 0.25s;
           &:hover{
@@ -77,6 +78,17 @@ export const Container = styled.section`
 
     }
   }
+  
+  /* Light mode: force white text inside colored cards for contrast */
+  html.light & {
+    .projects .project{
+      color: #FFFFFF;
+    }
+    .projects .project p a{
+      color: #FFFFFF;
+    }
+  }
+  
 
   @media (max-width: 960px){
     .projects{

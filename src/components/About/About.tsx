@@ -36,19 +36,22 @@ export function About() {
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
             <p>
-              Hi, I'm Akhilaa — a Master's student in Computer Science at USC and a Software Developer with experience in full-stack development, cloud platforms, and data-driven applications.
+            Hi, I'm Akhilaa Sonduri Panthangi — a Master’s student in Computer Science at USC and a Software Developer passionate about building scalable, data-driven, and impactful applications.
             </p>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-            <p>
-              Skilled in React, Node.js, AWS, and GCP, I’ve built scalable applications including a real-time stock search platform and MedGuard, a medical monitoring system. I enjoy creating impactful solutions with clean, efficient code.
-            </p>
+            <p>I specialize in full-stack development using React, Node.js, AWS, and GCP, and love turning complex ideas into clean, efficient, and user-friendly software. From developing a real-time stock search platform to creating MedGuard, a medical monitoring system, I’ve designed and deployed solutions that bridge functionality with real-world impact.</p>
+              
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}>
-            <p>
-              I'm passionate about developing software that solves real-world problems and excited to grow as a Software Engineer while contributing to innovative teams.
-            </p>
+            <p> Curious by nature and driven by problem-solving, I thrive at the intersection of technology and creativity crafting systems that don’t just work well, but make a difference. I’m excited to grow as a Software Engineer, collaborate with innovative teams, and continue building products that empower users and elevate experiences.</p>
           </ScrollAnimation>
+          <div className="about-badges">
+            <span className="badge">Full‑stack Development</span>
+            <span className="badge">Software Engineer</span>
+            <span className="badge">Data‑driven Apps</span>
+            <span className="badge">Cloud & DevOps</span>
+          </div>
         </div>
 
 

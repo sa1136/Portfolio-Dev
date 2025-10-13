@@ -120,17 +120,18 @@ export const Container = styled.section`
     position: relative;
     margin-bottom: 2rem;
     padding: 2rem 1.8rem;
-    background-color: #2b2b2b;
+    background-color: var(--accent-1);
     border-radius: 1.2rem;
     transition: 0.25s;
-    color: #FFF;
+    color: var(--text);
     display: flex;
     flex-direction: row;
     align-items: center;
 
     &:hover {
       transform: translateY(-5px);
-      background-color: var(--pink);
+      filter: brightness(0.95);
+      background-color: #3b2fb3; /* even darker purple */
     }
 
     &:before {
@@ -177,7 +178,7 @@ export const Container = styled.section`
         margin-bottom: 1rem;
 
         a {
-          color: #FFFF;
+          color: var(--text);
           border-bottom: 1px solid var(--green);
           transition: color 0.25s;
 
@@ -198,6 +199,18 @@ export const Container = styled.section`
       }
     }
   }
+  
+  /* Light mode: force white text inside colored cards for contrast */
+  html.light & {
+    .experience{
+      color: #FFFFFF;
+    }
+    .experience .body p a{
+      color: #FFFFFF;
+    }
+  }
+  
+  
 
   @media (max-width: 960px) {
     .experience {
