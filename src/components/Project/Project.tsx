@@ -52,7 +52,7 @@ export function Project() {
               <div className="project-links">
                 {/* <a href="https://github.com/CodeVinayak/Serverless-Voting-Application" target="_blank" rel="noreferrer">
                   <img src={githubIcon} alt="Visit site" /></a> */}
-                <a href="https://web3client-419104.uw.r.appspot.com/search/home" target="_blank" rel="noreferrer">
+                <a href="https://stock-search-client.vercel.app/search/home" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a> </div>
             </header>
