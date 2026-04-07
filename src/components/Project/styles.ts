@@ -16,6 +16,13 @@ export const Container = styled.section`
     gap: 2rem;
     padding: 1rem;
 
+    /* ScrollAnimation adds an extra wrapper div inside the grid.
+       Make that wrapper stretch so all cards in the row match height. */
+    > div{
+      height: 100%;
+      display: flex;
+    }
+
         .project{
           background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
           border: 1px solid rgba(255, 255, 255, 0.3);
@@ -28,6 +35,7 @@ export const Container = styled.section`
           flex-direction: column;
           height: 100%;
           color: var(--text);
+          width: 100%;
           
           &:nth-child(1) {
             background: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(108, 92, 231, 0.15));
@@ -80,6 +88,16 @@ export const Container = styled.section`
           &:hover{
             color: var(--green);
           }
+        }
+      }
+
+      ul{
+        letter-spacing: 0.12rem;
+        margin-bottom: 2rem;
+        padding-left: 2rem;
+        
+        li{
+          margin-bottom: 0.8rem;
         }
       }
 
