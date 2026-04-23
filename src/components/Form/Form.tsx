@@ -216,11 +216,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import validator from 'validator';
 import { Container, ContainerSuccess, FormContainer } from './styles'; // Adjust the import path as needed
 
-const email = 'sondurip@usc.edu';
-
 const Form: React.FC = () => {
   const [validEmail, setValidEmail] = useState(false);
-  const [isHuman, setIsHuman] = useState(true);  // Assuming no CAPTCHA used
+  const isHuman = true; // no CAPTCHA currently used
   const [message, setMessage] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
 
