@@ -21,6 +21,7 @@ export const Container = styled.section`
     > div{
       height: 100%;
       display: flex;
+      min-width: 0;
     }
 
         .project{
@@ -36,6 +37,7 @@ export const Container = styled.section`
           height: 100%;
           color: var(--text);
           width: 100%;
+          min-width: 0;
           
           &:nth-child(1) {
             background: linear-gradient(135deg, rgba(108, 92, 231, 0.3), rgba(108, 92, 231, 0.15));
@@ -106,6 +108,7 @@ export const Container = styled.section`
         .tech-list{
           display: flex;
           align-items: center;
+          flex-wrap: wrap;
           gap: 2rem;
           font-size: 1.4rem;
           opacity: 0.6;
