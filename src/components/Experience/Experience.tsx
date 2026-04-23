@@ -1,9 +1,6 @@
 
 import { Container } from "./styles";
-import githubIcon from "../../assets/github.svg";
-import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-import accolite from '../../assets/accolite.jpg'; 
 
 export function Experience() {
   return (
@@ -11,6 +8,20 @@ export function Experience() {
       <h2>My Experience</h2>
       
       <div className="experience-timeline">
+        <div className="timeline-item">
+          <ScrollAnimation animateIn="fadeInLeft" delay={0.05 * 1000}>
+            <div className="timeline-card">
+              <h3>Research Assistant</h3>
+              <h4>University of Southern California - Viterbi School of Engineering</h4>
+              <p><strong>Los Angeles, CA</strong></p>
+              <p><strong>Sep 2025 – Present</strong></p>
+              <p>Developed and deployed agentic AI frameworks using React, TypeScript, Node.js, Express.js, and MongoDB, enabling real-time visualization of LLM reasoning and improving task automation efficiency across research applications.</p>
+              <p>Architected and optimized multi-agent systems for information extraction, ranking, and adaptive planning using LLMs, NLP, and Retrieval-Augmented Generation (RAG), enhancing coordination accuracy and scalability of AI-driven workflows.</p>
+              <p>Integrated AI/ML backend services with responsive frontend interfaces, building dynamic dashboards and APIs that improved system performance, reduced latency, and enhanced end-user experience across complex research prototypes.</p>
+            </div>
+          </ScrollAnimation>
+        </div>
+
         <div className="timeline-item">
           <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
             <div className="timeline-card">
