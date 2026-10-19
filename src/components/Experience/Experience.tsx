@@ -9,57 +9,40 @@ export function Experience() {
       
       <div className="experience-timeline">
         <div className="timeline-item">
-          <ScrollAnimation animateIn="fadeInLeft" delay={0.05 * 1000}>
+          <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
             <div className="timeline-card">
-              <h3>Research Assistant</h3>
-              <h4>University of Southern California - Viterbi School of Engineering</h4>
-              <p><strong>Los Angeles, CA</strong></p>
-              <p><strong>Sep 2025 – Present</strong></p>
-              <p>Developed and deployed agentic AI frameworks using React, TypeScript, Node.js, Express.js, and MongoDB, enabling real-time visualization of LLM reasoning and improving task automation efficiency across research applications.</p>
-              <p>Architected and optimized multi-agent systems for information extraction, ranking, and adaptive planning using LLMs, NLP, and Retrieval-Augmented Generation (RAG), enhancing coordination accuracy and scalability of AI-driven workflows.</p>
-              <p>Integrated AI/ML backend services with responsive frontend interfaces, building dynamic dashboards and APIs that improved system performance, reduced latency, and enhanced end-user experience across complex research prototypes.</p>
+              <h3>AI Engineer</h3>
+              <h4>Proliant Data</h4>
+              <p><strong>May 2026 – Present</strong></p>
+              <p>Delivered the core Python library behind RESOLVE, an AI-native, NLP-to-SQL agent that answers analysts' questions in natural language over enterprise migration data, built as ~3,300 lines across 12 modules (safety layer, metadata registry, Neo4j KG queries, FAISS retrieval) grounding every generated SQL query and answer in hybrid RAG.</p>
+              <p>Cut token spend and eliminated runaway loops in a 28-tool autonomous agent through prompt caching, history pruning, and result compaction, backed by hard termination guards (budget caps, forced synthesis) the model cannot override.</p>
+              <p>Secured the platform to enterprise standards, closing SQL-injection, CORS, MIME-spoofing, and credential risks via AST-based SQL validation, Azure Key Vault rotation, and PII redaction, gated by a CI eval harness on correctness, groundedness, and cost.</p>
             </div>
           </ScrollAnimation>
         </div>
 
         <div className="timeline-item">
-          <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
-            <div className="timeline-card">
-              <h3>Software Developer</h3>
-              <h4>HubSpot</h4>
-              <p><strong>Jun 2025 – Sep 2025</strong></p>
-              <p>Engineered advanced Action Builder features including interactive tooltips, case-sensitive validation, page-level dropdowns, drag-and-drop outputs, custom code execution, and enum input panels—using TypeScript and React, increasing workflow efficiency by 25%.</p>
-              <p>Integrated dynamic listing category types into frontend UI and underlying data models, ensuring state consistency and enabling scalable workflow automation across applications.</p>
-              <p>Developed and enabled Chirp API endpoints to seamlessly connect backend services with frontend workflows, supporting real-time billing metric integration and dynamic execution pipelines.</p>
-              <p>Enhanced gates, release scopes, and RTL functionality for the External Action Builder, reducing QA defects by 30% and accelerating release timelines.</p>
-              <p>Stabilized internal Action Builder and QA environments by resolving visual rendering bugs, acceptance test crashes, and event-handling issues, improving system reliability and developer confidence.</p>
-              <p>Implemented end-to-end event tracking and telemetry across workflow components, significantly improving observability, debugging efficiency, and product maintainability.</p>
-            </div>
-          </ScrollAnimation>
-        </div>
-        
-        <div className="timeline-item">
           <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
             <div className="timeline-card">
-              <h3>Software Developer Intern</h3>
-              <h4>WorkUp</h4>
-              <p><strong>May 2024 – Jul 2024</strong></p>
-              <p>Developed and integrated 5 RESTful API endpoints using Node.js, enabling efficient management of custom interview questions and sets. I also developed the corresponding frontend components in React.js, ensuring seamless interaction between the client and server.</p>
-              <p>Implemented Zoom SDKs to incorporate video chat functionality into the interview platform, significantly enhancing its real-time communication capabilities. Additionally, I developed a feature allowing users to select interview templates categorized by type, optimizing the template selection process.</p>
-              <p>Added a feature for playable video recordings on interview result cards, utilizing HTML5 video components and custom React hooks. This allowed users to review interview recordings directly within the platform, improving post-interview analysis and feedback.</p>
+              <h3>Research Assistant</h3>
+              <h4>University of Southern California - Viterbi School of Engineering</h4>
+              <p><strong>Sep 2025 – Apr 2026</strong></p>
+              <p>Architected agentic AI frameworks and multi-agent systems using React, TypeScript, Node.js, Express.js, and MongoDB, enabling real-time visualization of LLM reasoning and optimizing information extraction, ranking, and adaptive planning workflows.</p>
+              <p>Built MoodMap, an AI-powered location recommendation engine using Groq Llama 3.3 70B, RAG, and OpenStreetMap for mood-based personalized suggestions via a mobile-first chatbot interface; integrated LLMs, NLP, and RAG pipelines with responsive frontend dashboards and APIs, enhancing coordination accuracy, reducing latency, and improving scalability across complex research prototypes.</p>
             </div>
           </ScrollAnimation>
         </div>
-        
+
         <div className="timeline-item">
           <ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
             <div className="timeline-card">
-              <h3>Software Developer</h3>
-              <h4>Accolite Digital</h4>
-              <p><strong>Aug 2022 – Jul 2023</strong></p>
-              <p>Worked as a Software Developer at Accolite Digital, specializing in AWS and Google Cloud Platform (GCP) technologies.</p>
-              <p>As a certified AWS Cloud Practitioner, I led the containerization of web applications and implemented CI/CD pipelines, reducing deployment times by 20%. My expertise in AWS included managing VPCs, Amazon RDS databases, S3 buckets, EC2 instances, and Lightsail, ensuring reliable and scalable cloud solutions.</p>
-              <p>My role emphasized optimizing cloud infrastructure for robust performance and cost-effectiveness.</p>
+              <h3>Software Engineer</h3>
+              <h4>HubSpot</h4>
+              <p><strong>Jun 2025 – Sep 2025</strong></p>
+              <p>Built an AI-powered summary and suggestion panel in the Workflow Action Builder, parsing triggers, filter branches, and action steps into structured payloads, reducing pre-activation review time by 30% and workflow misconfiguration by ~20%.</p>
+              <p>Enhanced workflow efficiency by 25% by designing a new input panel to configure, reorder, validate, and save multiple workflow inputs with improved usability and visual consistency.</p>
+              <p>Led a data model migration for workflow categories, defining clear data structures and service contracts to enable scalable automation and consistent platform behavior.</p>
+              <p>Boosted platform reliability and QA efficiency by 30% by integrating real-time APIs, strengthening feature controls, execution safeguards, and monitoring for billing and analytics.</p>
             </div>
           </ScrollAnimation>
         </div>
@@ -68,17 +51,28 @@ export function Experience() {
           <ScrollAnimation animateIn="fadeInRight" delay={0.4 * 1000}>
             <div className="timeline-card">
               <h3>Software Developer Intern</h3>
-              <h4>Accolite Digital</h4>
-              <p><strong>Jan 2022 – Jul 2022</strong></p>
-              <p>Demonstrated expertise in Node.js, .NET, and React, utilizing these frameworks to develop effective and scalable software solutions tailored to diverse business needs.</p>
-              <p>Strengthened skillfulness in programming languages such as C, C++, JavaScript, and Python, broadening my capability to tackle diverse technical challenges with confidence.</p>
-              <p>Mastered Git for efficient code management and collaboration, ensuring streamlined development processes and maintaining code integrity throughout projects.</p>
+              <h4>WorkUp</h4>
+              <p><strong>May 2024 – Jul 2024</strong></p>
+              <p>Engineered an AI-Driven Interview Customization Feature and Automated Template Selection system in React and Node.js, increasing user adoption by 40% and cutting recruiter setup time by 50%.</p>
+              <p>Revamped the AI Copilot Web App UI by migrating to React and embedding video playback of candidate responses in reports, improving decision-making by 60% and overall user engagement by 30%.</p>
             </div>
           </ScrollAnimation>
         </div>
         
         <div className="timeline-item">
           <ScrollAnimation animateIn="fadeInLeft" delay={0.5 * 1000}>
+            <div className="timeline-card">
+              <h3>Software Developer</h3>
+              <h4>Accolite Digital</h4>
+              <p><strong>Jan 2022 – Jul 2023</strong></p>
+              <p>Administered AWS services (VPCs, RDS, S3, EC2, Lightsail) and orchestrated CI/CD pipelines with containerized applications as a Certified AWS Cloud Practitioner, slashing deployment time by 20% while ensuring secure, scalable infrastructure; led migration to GCP, cutting operational costs by 15%.</p>
+              <p>Optimized Git workflows and collaborated cross-functionally on Node.js, .NET, React, microservices, and REST API integration, strengthening monitoring and alerting across cloud infrastructure and increasing system reliability and uptime by 25%.</p>
+            </div>
+          </ScrollAnimation>
+        </div>
+        
+        <div className="timeline-item">
+          <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
             <div className="timeline-card">
               <h3>Research Intern</h3>
               <h4>MIT Square</h4>

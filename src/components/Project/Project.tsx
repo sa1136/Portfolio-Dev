@@ -35,6 +35,25 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
               <div className="project-links">
+              </div>
+            </header>
+            <div className="body">
+              <h3>NutriCraft: Food, Macro and Cost Tracker</h3>
+              <p>Engineered an offline-first React Native app with a local SQLite database via Drizzle ORM that syncs to Supabase Postgres, so users can log meals with no connection and stay consistent across devices. Added a tool-calling chat and voice assistant that converts free-text meal descriptions into structured food, macro, and cost records, cutting manual entry to a single message.</p>
+            </div>
+            <footer>
+              <ul className="tech-list">
+                <li>React Native</li><li>SQLite</li><li>Drizzle ORM</li><li>Supabase</li><li>PostgreSQL</li>
+              </ul>
+            </footer>
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="flipInX">
+          <div className="project">
+            <header>
+              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"> <title>Folder</title> <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path> </svg>
+              <div className="project-links">
                 <a href="https://med-gaurd.vercel.app/" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
@@ -77,9 +96,9 @@ export function Project() {
             </header>
             <div className="body">
               <h3>Real-time Stock Search Web Application</h3>
-              <p>Independently conceptualized, designed, and developed a stock search web application using React.js, Node.js, and MongoDB. Integrated Finhub API and Polygon API for real-time stock data.Hosted on Google Cloud Platform (GCP), ensuring 80% faster load times. Streamlined data management with MongoDB for reduced access times. Enhanced user experience with dedicated components for news, insights, and charts, providing 60% more comprehensive stock information.</p>
+              <p>Developed a responsive web and iOS application using React, Node.js, MongoDB Atlas, Bootstrap, and Swift, providing real-time stock data retrieval and portfolio management. Integrated Finnhub API and Polygon AI for live stock insights and managed user portfolios with MongoDB, increasing engagement and user satisfaction by 75%.</p>
             </div>
-            <footer> <ul className="tech-list"> <li>React</li><li>DynamoDB</li><li>Node.js</li><li>Highcharts</li><li>GCP</li></ul> </footer>
+            <footer> <ul className="tech-list"> <li>React</li><li>Node.js</li><li>MongoDB</li><li>SwiftUI</li><li>RWD</li></ul> </footer>
           </div>
         </ScrollAnimation>
 
@@ -95,10 +114,10 @@ export function Project() {
                 </a> </div>
             </header>
             <div className="body">
-              <h3>Crypto Currency Price Prediction Model</h3>
-              <p>Developed a machine learning model to predict the price of a specific cryptocurrency using historical data, achieving high predictive accuracy. Formulated and executed a comprehensive project plan to analyze cryptocurrency price trends, resulting in a 20% accuracy improvement over previous models. Implemented the model using Python, incorporating Time Series Analysis and Feature Engineering techniques, and achieved a 90% accuracy rate.</p>
+              <h3>Cryptocurrency Price Prediction using ARIMA</h3>
+              <p>Predicted Ethereum daily price changes with 95% accuracy leveraging ARIMA and advanced time series analysis. Disseminated research findings in IEEE Xplore, contributing to advancements in cryptocurrency forecasting.</p>
             </div>
-            <footer> <ul className="tech-list"><li>Time Series</li><li>ARIMA</li><li>Feature Engineering</li></ul> </footer>
+            <footer> <ul className="tech-list"><li>Python</li><li>Machine Learning</li><li>Time Series</li><li>ARIMA</li></ul> </footer>
           </div>
         </ScrollAnimation>
 
