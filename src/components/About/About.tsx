@@ -47,13 +47,19 @@ export function About() {
             <img src={akhilaa} alt="Akhilaa Sonduri Panthangi" />
           </div>
           <p>
-            Hi, I'm Akhilaa Sonduri Panthangi , a Master's student in Computer Science at USC and a Software Developer passionate about building scalable, data-driven, and impactful applications.
+            I'm Akhilaa, an AI and Full Stack Engineer based in Boston with a Master's in Computer Science from USC.
           </p>
           <p>
-            I specialize in full-stack development using React, Node.js, AWS, and GCP, and love turning complex ideas into clean, efficient, and user-friendly software. From developing a real-time stock search platform to creating MedGuard, a medical monitoring system, I've designed and deployed solutions that bridge functionality with real-world impact.
+            I build intelligent systems that are reliable in production. At Proliant Data, I develop RESOLVE, an AI agent that turns natural language questions into grounded, secure SQL over enterprise data. Previously at HubSpot, I built workflow features that reduced review time by 30% and misconfigurations by 20%.
           </p>
           <p>
-            Curious by nature and driven by problem-solving, I thrive at the intersection of technology and creativity crafting systems that don't just work well, but make a difference. I'm excited to grow as a Software Engineer, collaborate with innovative teams, and continue building products that empower users and elevate experiences.
+            My work sits at the intersection of AI and engineering: RAG pipelines, agentic systems, and the evaluation and safety layers that make them trustworthy. I pair that with a strong frontend focus, turning complex capabilities into clean, intuitive experiences.
+          </p>
+          <p>
+            When I'm not at work, I'm building side projects like NutriCraft, an offline first nutrition and budget tracker powered by an AI logging agent.
+          </p>
+          <p>
+            I'm always open to conversations about AI, product, and meaningful engineering challenges.
           </p>
         </ScrollAnimation>
       </div>
